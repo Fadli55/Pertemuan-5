@@ -1,0 +1,133 @@
+/* Reset margin dan padding bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Wrapper untuk menahan agar layout rapi di tengah */
+.wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Heading 1 judul utama */
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+/* --- Banner --- */
+.header-banner .banner-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* --- Navigasi (Menerapkan Hint A) --- */
+.navbar {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: flex-end; /* Memposisikan menu ke kanan */
+    background-color: #a6a6a6;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px; /* Jarak antar menu */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* --- Konten Utama (Menerapkan Hint B) --- */
+.main-content {
+    display: flex; /* Menggunakan Flexbox untuk membagi 2 kolom */
+    align-items: stretch; /* Memastikan tinggi kedua kolom sejajar */
+}
+
+/* Kolom Kiri (Biodata) */
+.biodata {
+    flex: 3.5; /* Proporsi lebar kolom kiri (sekitar 35%) */
+    background-color: #a3d5d3; /* Warna background biru tosca/hijau muda */
+    padding: 20px;
+}
+
+.biodata h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.biodata .profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+}
+
+.biodata p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Kolom Kanan (Pengalaman Kerja) */
+.pengalaman {
+    flex: 6.5; /* Proporsi lebar kolom kanan (sekitar 65%) */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.pengalaman h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Styling Tabel Pengalaman */
+.tabel-pengalaman {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+}
+
+.tabel-pengalaman th, 
+.tabel-pengalaman td {
+    padding: 8px;
+}
+
+/* Mengatur warna latar belakang tabel sama seperti di contoh gambar */
+.tabel-pengalaman thead {
+    background-color: #a3d5d3;
+}
+
+.tabel-pengalaman tbody tr {
+    background-color: #a3d5d3;
+}
+
+.tabel-pengalaman th {
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #a6a6a6;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #333;
+}
