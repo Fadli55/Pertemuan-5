@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,10 @@
 body {
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 
 .wrapper {
-    width: 95%;
     max-width: 1000px;
     margin: 20px auto;
     background-color: #fff;
@@ -58,7 +53,6 @@ h1 {
 .main-content {
     display: flex; 
     align-items: stretch; 
-    min-height: 400px;
 }
 
 .biodata {
